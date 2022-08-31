@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+ int main() {
+ double tempC, tempF;
+ printf("Conversão Celsius para Fahrenheit\n");
+ printf("(valor menor que -273.15 encerra o programa)\n\n");
+ printf("Temperatura em Celsius: ");
+ scanf("%lf", &tempC);
+
+ if (tempC >= -273.15) {
+ tempF = 1.8 * tempC + 32;
+ printf("%lf graus Celsius = %lf graus Fahrenheit.\n",
+ tempC, tempF);
+ }
+ return 0;
+ }
